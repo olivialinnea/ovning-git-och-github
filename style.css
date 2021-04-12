@@ -1,0 +1,129 @@
+* {
+  font-family: "Bebas Neue", cursive;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+#colorscheme {
+  height: 25vh;
+  width: 100vw;
+  display: flex;
+}
+
+span {
+  position: absolute;
+  align-self: center;
+}
+
+#container {
+  display: flex;
+  height: 75vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 3vh;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+#bigger,
+#stop,
+#smaller {
+  border: solid black 1px;
+  background-color: rgba(255, 255, 255, 0.788);
+  width: 18vw;
+  height: 7vh;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1vh;
+}
+
+#bigger {
+  left: 1vh;
+}
+
+#smaller {
+  right: 1vh;
+}
+
+#colorscheme > div {
+  border: solid 1px black;
+  flex-grow: 1;
+  flex-basis: 0;
+  height: 22vh;
+  align-self: center;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.selected {
+  box-shadow: 0 0 5px 3px rgba(122, 122, 122) !important;
+}
+
+.hover:hover {
+  box-shadow: 0px 0px 5px 0px;
+}
+
+.c {
+  flex-grow: 1;
+}
+#c1,
+#c2,
+#c3,
+#c4,
+#c5 {
+  height: 100%;
+}
+
+#result {
+  position: absolute;
+  bottom: 25vh;
+}
+
+#box1 {
+  width: 150px;
+  height: 150px;
+}
+#box2 {
+  width: 90%;
+  height: 90%;
+}
+#box3 {
+  width: 90%;
+  height: 90%;
+}
+#box4 {
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+}
+#box5 {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: height, width, ease-in-out;
+  transition-duration: 10s;
+
+  position: initial;
+}

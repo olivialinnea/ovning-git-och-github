@@ -90,3 +90,5 @@ function frontPage(){
 }
 
 frontPage();
+
+//Kommentar för att testa att det funkar med GitHub
